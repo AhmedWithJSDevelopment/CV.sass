@@ -1,51 +1,40 @@
 // variables:
-
 //----color
+$Transparent-color :#00000000;
 $AllContent-color :#2c3e50;
 $AllContent2-color :#094bf1;
 $AllContent3-color :#401e45;
-
-
-
 $LeftSection3-color :#57046c;
 $LeftSection2-color :#4226ce;
 $LeftSection-color :#267777;
-
-
 $Cont-color: $AllContent-color;
 $ul-color: #267777;
 $ul-color: #26777752;
 $progress-color: #08fc1c;
 $progress-bar-color: #0000004f;
 $checked-color: #f1c40f;
-
 $fa-color:$progress-bar-color;
 $articleBg-color: #267777;
-
 $articleColor-color: #ecf0f1;
-$hone-color: #e4f1fe ;
-$pFirst-color: yellow ;
-$psecond-color: wheat ;
-$Contact-color: gold ;
-$ContactLi-color: white ;
-$Contacti-color: #2D9CDB ;
-$p1Bg-color: #1abc9c3d ;
-
-
-$p5-color: #2980b9; ;
-$p1Color-color: #ffffff ;
-
+$hone-color: #e4f1fe;
+$pFirst-color: yellow;
+$psecond-color: wheat;
+$Contact-color: gold;
+$ContactLi-color: white;
+$Contacti-color: #2D9CDB;
+$p1Bg-color: #1abc9c3d;
+$p5-color: #2980b9;
+;
+$p1Color-color: #ffffff;
 $p1BorderLeftHover-color: $ContactLi-color;
-$hThreeL-color: #00e8fd   ;
-$p2-color: $hone-color ;
-$h5-color: $p1Color-color ;
-$span1L-color: #26ff00 ;
-
+$hThreeL-color: #00e8fd;
+$p2-color: $hone-color;
+$h5-color: $p1Color-color;
+$span1L-color: #26ff00;
 $hThreeR: #ff0404;
 $aR: #31cfc8;
-
-$span1R-color: $p1Color-color ;
-$span2R-color:$articleColor-color ;
+$span1R-color: $p1Color-color;
+$span2R-color:$articleColor-color;
 $content-color:#f39c12;
 $rightbox-color:$checked-color;
 $Rlborder-color:#00000000;
@@ -56,43 +45,18 @@ $BorderUL-color: $Rlborder-color;
 $BorderRhover-color: $p1Color-color;
 $textshadowLeft-color:#000000;
 $links-color-hover:#ffff00;
-
-
-
-
-
-
-
-
-
-
-
-
-
 // set text-color based on Background
 @function text-color($color) {
-
-    @if lightness($color) >70 {
+    @if lightness($color)>70 {
         @return #000000;
-    } @else {
+    }
+    @else {
         @return #fff;
     }
-        
-    }
-
-
- 
-
-
-
-        
-
-
-
+}
 
 // set bg and text-color based on prime color
 @mixin background-color($color) {
     background-color: $color;
     color: text-color($color);
-
 }
